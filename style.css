@@ -1,0 +1,80 @@
+body.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('/muffin.jpg');
+    background-size: cover; 
+    background-size: contain;
+    background-repeat: no-repeat; /* Para evitar repeticiones de la imagen */
+    background-position: center; 
+    background-size: 100%
+}
+.father {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.heart {
+    
+    background-color: red;
+    height: 60px;
+    width: 60px;
+    transform: rotate(-45deg);
+    
+    animation: pulse 1s infinite;
+    
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+}
+.heart::before {
+    top: -30px;
+}
+
+.heart::after {
+    left: 30px;
+}
+@keyframes pulse {
+    75% {
+        transform:
+        rotate(-45deg) scale(1.1);
+    }
+}
+@keyframes pulse {
+    75% {
+        transform:
+        rotate(-45deg)
+        scale(1.1);
+    }
+}
+.texto {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 200px;
+    font-size: 32px;
+}
+.foo {
+    text-align: center;
+    color: white;
+}
+.especial {
+    font-family: 'La Belle Aurore', cursive;
+}
+/* font-family: 'La Belle Aurore', cursive;
